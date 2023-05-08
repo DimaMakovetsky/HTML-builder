@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const pathToFolder = path.basename(__dirname)+'\\secret-folder';
-console.log(pathToFolder);
 fs.readdir(pathToFolder, {withFileTypes:true}, (err, files) => {
   if(err) {
     console.log(err);
